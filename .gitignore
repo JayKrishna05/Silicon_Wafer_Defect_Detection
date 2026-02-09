@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+wm811k_env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pth
+*.pt
+
+# Pause file
+PAUSE.txt
