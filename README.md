@@ -1,11 +1,9 @@
 Silicon Wafer Defect Detection Using Vision Transformers (WM-811K)
 
-This repository implements a robust 
-training pipeline for silicon wafer defect classification using a Vision
+This repository implements a training pipeline for silicon wafer defect classification using a Vision
  Transformer (ViT-Tiny) model trained on the WM-811K / LSWMD dataset. 
 
-The training script supports 
-automatic checkpointing, safe interruption handling, and true 
+The training script supports automatic checkpointing, safe interruption handling, and true 
 pause/resume functionality without loss of progress.
 
 Project Structure
@@ -114,7 +112,7 @@ vit_wafer_final.pth
 
 This file contains the trained 
 weights along with the associated class label mapping and configuration 
-parameters after 5 epochs, and can be used directly for inference or evaluation.
+parameters after epochs, and can be used directly for inference or evaluation.
 
 Important Notes
 
