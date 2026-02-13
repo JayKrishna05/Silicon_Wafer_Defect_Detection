@@ -10,7 +10,7 @@ from timm import create_model
 from sklearn.model_selection import train_test_split
 
 # -------------------------------------------------
-# CPU OPTIMIZATION (Ryzen 7 7840U)
+# CPU OPTIMIZATION
 # -------------------------------------------------
 torch.set_num_threads(8)
 torch.set_num_interop_threads(1)
@@ -20,7 +20,7 @@ torch.backends.mkldnn.enabled = True
 # CONFIG
 # -------------------------------------------------
 PKL_PATH = r"E:\silicon\Training Code\dataset\LSWMD.pkl"
-BATCH_SIZE = 16          # good for 16GB RAM
+BATCH_SIZE = 16        
 EPOCHS = 5
 IMG_SIZE = 128
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -34,7 +34,7 @@ PAUSE_FILE = "PAUSE.txt"
 # -------------------------------------------------
 def wait_if_paused():
     while os.path.exists(PAUSE_FILE):
-        print("⏸ Training paused (PAUSE.txt exists). Delete it to resume.")
+        print("Training paused (PAUSE.txt exists). Delete it to resume.")
         time.sleep(5)
 
 # -------------------------------------------------
