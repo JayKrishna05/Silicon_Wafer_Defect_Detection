@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 
 # -------------------------------------------------
 # CPU OPTIMIZATION 
+# CPU OPTIMIZATION
 # -------------------------------------------------
 torch.set_num_threads(8)
 torch.set_num_interop_threads(1)
@@ -21,6 +22,7 @@ torch.backends.mkldnn.enabled = True
 # -------------------------------------------------
 PKL_PATH = r"E:\silicon\Training Code\dataset\LSWMD.pkl"
 BATCH_SIZE = 16          
+BATCH_SIZE = 16        
 EPOCHS = 5
 IMG_SIZE = 128
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
