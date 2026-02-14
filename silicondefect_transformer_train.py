@@ -34,7 +34,7 @@ PAUSE_FILE = "PAUSE.txt"
 # -------------------------------------------------
 def wait_if_paused():
     while os.path.exists(PAUSE_FILE):
-        print("⏸ Training paused (PAUSE.txt exists). Delete it to resume.")
+        print("Training paused (PAUSE.txt exists). Delete it to resume.")
         time.sleep(5)
 
 # -------------------------------------------------
